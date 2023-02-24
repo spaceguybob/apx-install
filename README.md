@@ -1,5 +1,5 @@
 # apx-install
-a universal installer script for apx or unix based oses
+a universal installer script for apx in unix based oses
 
 DEPENDENCIES
 ``` go ``` ``` git ``` ``` curl ```
