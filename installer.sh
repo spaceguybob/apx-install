@@ -16,4 +16,5 @@ go build
 echo "Moving files"
 $SUDO mv ~/apx/apx /usr/bin
 $SUDO mv ~/apx/config/config.json /etc/apx
+$SUDO mv ~/.local/bin/distrobox* /usr/lib/apx
 echo "Install Complete! :)"
