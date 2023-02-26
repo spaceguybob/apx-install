@@ -1,5 +1,9 @@
 !#/bin/bash
 cd ~/
+if (whoami = root)
+  then echo "DO NOT RUN AS ROOT!!"
+
+  else (
 SUDO=''
 if (( $EUID != 0 )); then
     SUDO='sudo'
@@ -18,3 +22,7 @@ $SUDO mv ~/apx/apx /usr/bin/
 $SUDO mv ~/apx/config/config.json /etc/apx/
 $SUDO mv ~/.local/bin/distrobox* /usr/lib/apx/
 echo "Install Complete! :)"
+)
+fi
+
+exit
