@@ -15,7 +15,7 @@ echo "Setting up directories"
 $SUDO mkdir /etc/apx/
 $SUDO mkdir /usr/lib/apx/
 echo "Compiling"
-cd ~/apx
+cd ~/apx/
 go build
 echo "Moving files"
 $SUDO mv ~/apx/apx /usr/bin/
