@@ -1,8 +1,8 @@
 !#/bin/bash
 cd ~/
-if (whoami = root)
-  then echo "DO NOT RUN AS ROOT!!"
-
+if (( $EUID != 0 )); then
+    echo "Please run as root"
+    exit
   else (
 SUDO=''
 if (( $EUID != 0 )); then
