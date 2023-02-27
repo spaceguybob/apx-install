@@ -1,11 +1,11 @@
-!#/bin/bash
+!#/bin/sh
 cd ~/
-if (( $EUID = 0 )); then
+if [[ $EUID = 0 ]]; then
     echo "Please DONT RUN AS ROOT"
     exit
   else (
 SUDO=''
-if (( $EUID != 0 )); then
+if [[ $EUID != 0 ]]; then
     SUDO='sudo'
 fi
 echo "Cloning"
@@ -21,6 +21,8 @@ echo "Moving files"
 $SUDO mv ~/apx/apx /usr/bin/
 $SUDO mv ~/apx/config/config.json /etc/apx/
 $SUDO mv ~/.local/bin/distrobox* /usr/lib/apx/
+echo "fixing ownerships"
+$SUDO chown -R ~/.local/share/icons
 echo "Install Complete! :)"
 )
 fi
