@@ -1,4 +1,4 @@
-!#/bin/sh
+#!/bin/bash
 cd ~/
 echo "Cloning"
 git clone https://github.com/Vanilla-OS/apx.git -q
