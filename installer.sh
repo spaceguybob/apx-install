@@ -19,7 +19,8 @@ cd ~/apx/
 go build
 echo "Moving files"
 $SUDO mv ~/apx/apx ~/.local/bin/
-$SUDO curl https://raw.githubusercontent.com/spaceguybob/apx-install/main/config.json>/etc/apx/config.json
+curl https://raw.githubusercontent.com/spaceguybob/apx-install/main/config.json>config.json
+$SUDO mv config.json /etc/apx/
 $SUDO mv ~/.local/bin/distrobox* /usr/local/lib/apx/
 echo "Install Complete! :)"
 
