@@ -2,11 +2,12 @@
 cd ~/
 if [[ $EUID = 0 ]]; then
     echo "Please DONT RUN AS ROOT"
+    fi
     exit
 SUDO=''
 if [[ $EUID != 0 ]]; then
     SUDO='sudo'
-fi
+
 echo "Cloning"
 git clone https://github.com/Vanilla-OS/apx.git -q
 curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sh -s -- --prefix ~/.local
@@ -21,6 +22,7 @@ $SUDO mv ~/apx/apx ~/.local/bin/
 $SUDO curl https://raw.githubusercontent.com/spaceguybob/apx-install/main/config.json>/etc/apx/config.json
 $SUDO mv ~/.local/bin/distrobox* /usr/local/lib/apx/
 echo "Install Complete! :)"
-exit
+
 fi
 
+exit
