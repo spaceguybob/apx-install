@@ -2,8 +2,8 @@
 cd ~/
 if [[ $EUID = 0 ]]; then
     echo "Please DONT RUN AS ROOT"
-    fi
     exit
+    fi
 SUDO=''
 if [[ $EUID != 0 ]]; then
     SUDO='sudo'
