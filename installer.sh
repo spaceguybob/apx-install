@@ -1,4 +1,4 @@
-!#/bin/sh
+#!/bin/sh
 cd ~/
 if [[ $EUID = 0 ]]; then
     echo "Please DONT RUN AS ROOT"
