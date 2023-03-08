@@ -15,13 +15,13 @@ echo "Setting up directories"
 $SUDO mkdir /etc/apx/
 $SUDO mkdir /usr/local/lib/apx/
 echo "Compiling"
-cd ~/apx/
+cd $HOME/apx/
 go build
 echo "Moving files"
-$SUDO mv ~/apx/apx ~/.local/bin/
-curl https://raw.githubusercontent.com/spaceguybob/apx-install/main/config.json>config.json
-$SUDO mv config.json /etc/apx/
-$SUDO mv ~/.local/bin/distrobox* /usr/local/lib/apx/
+$SUDO mv $HOME/apx/apx $HOME/.local/bin/
+curl https://raw.githubusercontent.com/spaceguybob/apx-install/main/config.json>$HOME/config.json
+$SUDO mv $HOME/config.json /etc/apx/
+$SUDO mv $HOME/.local/bin/distrobox* /usr/local/lib/apx/
 echo "Install Complete! :)"
 
 fi
