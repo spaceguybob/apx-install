@@ -1,6 +1,6 @@
 #!/bin/sh
 
-
+cd /tmp
 echo "Cloning"
 git clone https://github.com/Vanilla-OS/apx.git -q
 echo "Building"
