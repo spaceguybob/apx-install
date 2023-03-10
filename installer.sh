@@ -8,7 +8,7 @@ echo "Building"
 cd $HOME/apx/
 make build
 echo "Installing"
-sudo make install PREFIX=$HOME/.local
+make install PREFIX=$HOME/.local
 echo "Install Complete! :)"
 
 
