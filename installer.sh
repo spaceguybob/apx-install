@@ -4,10 +4,10 @@
 echo "Cloning"
 git clone https://github.com/Vanilla-OS/apx.git -q
 echo "Setting up directories"
-echo "Compiling"
+echo "Building"
 cd $HOME/apx/
 make build
-echo "Moving files"
+echo "Installing"
 sudo make install PREFIX=$HOME/.local
 echo "Install Complete! :)"
 
