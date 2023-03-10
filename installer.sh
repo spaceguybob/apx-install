@@ -2,7 +2,7 @@
 
 cd /tmp
 echo "Cloning"
-git clone https://github.com/Vanilla-OS/apx.git -q
+git clone --recursive https://github.com/Vanilla-OS/apx.git -q
 echo "Building"
 cd apx/
 make build
