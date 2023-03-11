@@ -2,7 +2,7 @@
 a universal installer script for apx in unix based oses
 
 DEPENDENCIES
-``` go ``` ``` git ``` ``` curl ```
+``` go ``` ``` make ``` ``` curl ```
 
 if you trust me, just do
 ```
