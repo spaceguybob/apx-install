@@ -7,7 +7,8 @@ echo "Building"
 cd apx/
 make build
 echo "Installing"
-sudo make install PREFIX=$HOME/.local
+sudo make install PREFIX=$HOME/.local -s
+make install-manpages PREFIX=$HOME/.local -s
 echo "Install Complete! :)"
 
 
