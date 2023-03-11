@@ -1,5 +1,5 @@
 #!/bin/sh
-
+rm -rf /tmp/apx
 cd /tmp
 echo "Cloning"
 git clone --recursive https://github.com/Vanilla-OS/apx.git -q
