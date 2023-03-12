@@ -9,6 +9,9 @@ make build -s
 echo "Installing"
 sudo make install PREFIX=$HOME/.local -s
 make install-manpages PREFIX=$HOME/.local -s
+echo "Fixing directories"
+sudo chown -R $(whoami) $HOME/.local/share/icons
+sudo chown -R $(whoami) $HOME/.local/share/apx
 echo "Install Complete! :)"
 
 
