@@ -2,7 +2,10 @@
 a universal installer script for apx in unix based oses
 
 DEPENDENCIES
-``` go ``` ``` make ``` ``` curl ``` ``` podman ```
+build:
+``` go ``` ``` make ``` ``` curl ``` 
+runtime:
+``` podman ``` or ``` docker ```
 
 if you trust me, just do
 ```
